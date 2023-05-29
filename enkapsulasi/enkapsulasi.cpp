@@ -9,7 +9,7 @@ private:
 	string saklarNo[10];
 public:
 	void setSaklarNo(int i, string value) {
-		saklarNo[1] = value;
+		saklarNo[i] = value;
 	}
 	string getSaklarNo(int i) {
 		return saklarNo[i];
@@ -17,7 +17,19 @@ public:
 };
 
 int main() {
+	remoteLampu lampuRumah;
 
+	lampuRumah.setSaklarNo(0, "Lampu Teras Rumah");
+	lampuRumah.setSaklarNo(1, "Lampu Ruang Tamu");
+	lampuRumah.setSaklarNo(2, "Lampu Kamar Tidur");
+	lampuRumah.setSaklarNo(3, "Lampu Dapur");
+
+	cout << lampuRumah.getSaklarNo(0) << endl;
+	cout << lampuRumah.getSaklarNo(1) << endl;
+	cout << lampuRumah.getSaklarNo(2) << endl;
+	cout << lampuRumah.getSaklarNo(3) << endl;
+
+	return 0;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
