@@ -36,8 +36,19 @@ public:
 };
 
 class budi : public pekerja, public pelajar {
+public:
 
+	budi(int pUmur) :
+		pekerja(pUmur),
+		pelajar(pUmur)
+	{
+		cout << "Budi dibuatin\n" << endl;
+	}
 };
+
+int main() {
+
+}
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
