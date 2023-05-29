@@ -27,7 +27,17 @@ public:
 };
 
 int main() {
+	seseorang* obyek;
+	joko a;
+	lia b;
 
+	obyek = &a;
+	obyek->pesan();
+	obyek = &b;
+	obyek->pesan();
+	//a.seseorang::pesan();
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
