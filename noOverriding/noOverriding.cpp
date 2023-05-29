@@ -5,9 +5,15 @@
 using namespace std;
 
 class baseClass {
-
+public:
+	virtual void perkenalan() final {
+		cout << "Hallo saya Function dari base class";
+	}
 };
 
+class derivedClass : public baseClass {
+
+};
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
