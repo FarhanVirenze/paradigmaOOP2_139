@@ -5,7 +5,8 @@
 using namespace std;
 
 class orang {
-
+public:
+	int umur;
 };
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
