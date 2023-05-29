@@ -5,9 +5,20 @@
 using namespace std;
 
 class remoteLampu {
-	
+private:
+	string saklarNo[10];
+public:
+	void setSaklarNo(int i, string value) {
+		saklarNo[1] = value;
+	}
+	string getSaklarNo(int i) {
+		return saklarNo[i];
+	}
 };
 
+int main() {
+
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
